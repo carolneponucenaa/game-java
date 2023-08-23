@@ -6,6 +6,7 @@ import java.util.Scanner;
 public class Register { /** Instancia Scanner*/
 Scanner teclado = new Scanner(System.in);
 
+
 int validaPrint = 0;
 
     /** Instancia Player*/
@@ -27,7 +28,7 @@ int validaPrint = 0;
 
     }
 
-    public void PlayerRegister(){
+    public Player PlayerRegister(){
         /**Coleta de dados Player-1*/
         System.out.println("-------------- Cadastro Player ---------------- ");
         System.out.println("Qual o seu nome: ");
@@ -40,8 +41,9 @@ int validaPrint = 0;
         if (validaPrint != 1) {
             output.Print(player);
         }
+        return player;
     }
-    public void EnemyRegister(){
+    public Enemy EnemyRegister(){
         /**Coleta de dados Enemy-1*/
         System.out.println("-------------- Cadastro Enemy ---------------- ");
         System.out.println("Qual o seu nome: ");
@@ -53,6 +55,7 @@ int validaPrint = 0;
         if (validaPrint != 1) {
             output.Print1(enemy);
         }
+        return enemy;
         }
         public void DecisionRegister(){
 
@@ -80,10 +83,11 @@ int validaPrint = 0;
             int continuar = teclado.nextInt();
 
             if (continuar==1){
+
                 DecisionRegister();
+
                 }
             }
 
     }
 
-}

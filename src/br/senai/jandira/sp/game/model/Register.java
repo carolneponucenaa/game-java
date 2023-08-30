@@ -32,9 +32,9 @@ int validaPrint = 0;
         /**Coleta de dados Player-1*/
         System.out.println("-------------- Cadastro Player ---------------- ");
         System.out.println("Qual o seu nome: ");
-        player.nome = teclado.nextLine();
+        player.nome = teclado.next();
         System.out.println("Escolha sua skin (red - blue - purple) : ");
-        player.skin = teclado.nextLine();
+        player.skin = teclado.next();
         System.out.println("--------------- Player Cadastrado com Sucesso -----------------");
 
         /**Printa as informaçoes cadastradas*/
@@ -47,9 +47,9 @@ int validaPrint = 0;
         /**Coleta de dados Enemy-1*/
         System.out.println("-------------- Cadastro Enemy ---------------- ");
         System.out.println("Qual o seu nome: ");
-        enemy.nome = teclado.nextLine();
+        enemy.nome = teclado.next();
         System.out.println("Escolha sua skin (red - blue - purple) : ");
-        enemy.skin = teclado.nextLine();
+        enemy.skin = teclado.next();
         System.out.println("--------------- Enemy Cadastrado com Sucesso -----------------");
 
         if (validaPrint != 1) {
@@ -63,7 +63,7 @@ int validaPrint = 0;
 
             System.out.println("Olá, seja bem-vindo ao jogo!");
             System.out.println("Qual opção você deseja cadastrar [ PLAYER - ENEMY - AMBOS: ]");
-            decision = teclado.nextLine();
+            decision = teclado.next();
 
             switch (decision.toUpperCase()){
                 case "PLAYER":

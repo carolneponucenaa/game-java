@@ -11,8 +11,8 @@ public class Menu {
         Register register = new Register();
         Battle battle = new Battle();
 
-        Player player = register.PlayerRegister();
-        Enemy enemy = register.EnemyRegister();
+        Player player = new Player();
+        Enemy enemy = new Enemy();
 
         boolean continuar = true;
 
@@ -38,8 +38,7 @@ public class Menu {
 
                 case 2:
                     battle.ChoiceScenario();
-                    battle.Battle(player, enemy);
-                    System.out.println("Feature in Development");
+                    battle.Battle(register.player, register.enemy);
                     break;
 
                 case 3:
